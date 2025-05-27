@@ -1,0 +1,528 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    .banner-content h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-banner {
+        padding: 7rem 0;
+    }
+    
+    .banner-content h2 {
+        font-size: 3rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+    
+    .promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .promo-grid .promo-item:last-child {
+        grid-column: span 2;
+    }
+    
+    .search-bar {
+        margin: 0 var(--spacing-md);
+    }
+    
+    .product-detail-content {
+        flex-direction: column;
+    }
+    
+    .product-gallery {
+        max-width: 100%;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .main-image {
+        height: 450px;
+    }
+    
+    .category-content {
+        flex-direction: column;
+    }
+    
+    .filter-sidebar {
+        width: 100%;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .dashboard-sidebar {
+        width: 100%;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .user-info {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .dashboard-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
+    
+    .dashboard-menu li {
+        margin-bottom: 0;
+    }
+    
+    .dashboard-menu a {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+    
+    .dashboard-menu a i {
+        margin-right: var(--spacing-xs);
+    }
+    
+    .cart-summary-container {
+        width: 100%;
+    }
+    
+    .product-tabs .tab-btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    html {
+        font-size: 15px;
+    }
+    
+    .top-bar .container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+    }
+    
+    .contact-info {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .contact-info span {
+        margin-right: var(--spacing-sm);
+        font-size: 0.8rem;
+    }
+    
+    .main-header .container {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .main-nav .container {
+        position: relative;
+    }
+    
+    .menu-toggle {
+        display: block;
+        padding: var(--spacing-md);
+    }
+    
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white-color);
+        flex-direction: column;
+        z-index: 100;
+        box-shadow: var(--shadow-md);
+    }
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu li {
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .menu li:last-child {
+        border-bottom: none;
+    }
+    
+    .menu li a {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+    
+    .menu li a:after {
+        display: none;
+    }
+    
+    .hero-banner {
+        padding: 5rem 0;
+    }
+    
+    .banner-content {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .banner-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.1rem;
+        margin: 0 auto var(--spacing-lg);
+    }
+    
+    .newsletter-content form {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .newsletter-content button {
+        width: 100%;
+    }
+    
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .promo-grid .promo-item:last-child {
+        grid-column: span 1;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-image {
+        height: 250px;
+    }
+    
+    .cart-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .cart-actions {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .coupon {
+        width: 100%;
+    }
+    
+    .coupon input {
+        flex-grow: 1;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .product-tabs .tabs-nav {
+        flex-wrap: wrap;
+    }
+    
+    .product-tabs .tab-btn {
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    .reviews-summary {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+    
+    .addresses-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .modal-content {
+        margin: 20px;
+        max-width: calc(100% - 40px);
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-banner {
+        padding: 4rem 0;
+    }
+    
+    .banner-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .banner-content p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .product-image {
+        height: 280px;
+    }
+    
+    .main-image {
+        height: 300px;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .product-price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .old-price, .discount {
+        margin-left: 0;
+        margin-top: var(--spacing-xs);
+    }
+    
+    .product-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+    
+    .product-delivery {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+    
+    .sort-filter {
+        width: 100%;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .sort {
+        width: 100%;
+    }
+    
+    .sort select {
+        width: 100%;
+    }
+    
+    .filter-toggle button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .auth-tabs {
+        flex-direction: column;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-methods {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .product-share {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* iPhone 5/SE (Portrait) */
+@media (max-width: 320px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+    
+    .banner-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .main-image {
+        height: 250px;
+    }
+    
+    .product-card {
+        max-width: 280px;
+    }
+    
+    .product-image {
+        height: 250px;
+    }
+}
+
+/* Adjustments for Desktop Screens (larger than 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .main-image {
+        height: 600px;
+    }
+    
+    .hero-banner {
+        padding: 10rem 0;
+    }
+    
+    .banner-content h2 {
+        font-size: 4rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header,
+    footer,
+    .breadcrumb,
+    .newsletter,
+    .related-products,
+    .product-actions,
+    .product-tabs .tabs-nav,
+    .product-share {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .product-detail-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .product-gallery {
+        max-width: 100%;
+    }
+    
+    .product-info {
+        page-break-inside: avoid;
+    }
+    
+    .thumbnail-gallery {
+        display: none;
+    }
+    
+    .product-description,
+    .product-full-description {
+        page-break-inside: avoid;
+    }
+    
+    .product-specifications table {
+        page-break-inside: avoid;
+    }
+}
