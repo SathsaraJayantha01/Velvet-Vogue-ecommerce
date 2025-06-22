@@ -26,7 +26,7 @@ Velvet Vogue is an e-commerce website designed for trendy casual and formal wear
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <https://github.com/SathsaraJayantha20/Velvet-Vogue-ecommerce.git>
+    git clone <https://github.com/SathsaraJayantha01/Velvet-Vogue-ecommerce.git>
     ```
 2.  **Set up a Web Server:** Install a web server environment like XAMPP, WAMP, or MAMP.
 3.  **Create a MySQL Database:** Create a database named `velvet_vogue`.
